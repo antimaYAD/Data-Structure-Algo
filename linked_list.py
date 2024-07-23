@@ -88,7 +88,8 @@ class LinkedList:
         for i in range (1,midindex - 1):
             curr = curr.next
             
-        curr = c 
+        curr.next = curr.next.next
+        self.n -= 1
     
     def get_middle(self):
         v= []
